@@ -1,8 +1,8 @@
 ---
 - name: "Install java openjdk"
-  dnf:
+  package:
    name: 
-     - java-1.8.0-openjdk 
-     - java-1.8.0-openjdk-devel
+     - "java-{{ java_version }}-openjdk"
+     - "java-{{ java_version }}-openjdk-devel"
    state: latest
 ...
